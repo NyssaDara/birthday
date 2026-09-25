@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Birthday Surprise ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- =========================
+         COVER
+    ========================== -->
+
+    <section class="screen pink-screen active" id="cover">
+
+        <div class="cover-content">
+
+            <p class="eyebrow">
+                THIS ONE'S JUST FOR YOU
+            </p>
+
+            <h1>
+                A very<br>
+                happiest<br>
+                birthday, babeeeeee ♡
+            </h1>
+
+            <p class="subtitle">
+                Turning 19<br>
+                buddhi ho rhi hai.
+            </p>
+
+            <button class="main-button" onclick="openBalloons()">
+           KUCHH KUCHH HAI AAPKE LIYE ..KHOLO JLDII →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BALLOONS
+    ========================== -->
+
+    <section class="screen white-screen" id="balloons">
+
+        <div class="balloon-heading">
+
+            <p class="eyebrow pink-text">
+                GIFTS FOR YOUUU
+            </p>
+
+            <h2>
+                Pick a balloon.<br>
+                Pop a surprise.
+            </h2>
+
+        </div>
+
+
+        <div class="balloon-container">
+
+
+            <!-- BALLOON 1 -->
+
+            <div class="balloon-option">
+
+                <button
+                    class="balloon balloon-pink"
+                    onclick="openGift('memories', this)"
+                >
+                    <span>01</span>
+                </button>
+
+                <p>
+                    USSSSS and YOUU 
+                </p>
+
+            </div>
+
+
+
+            <!-- BALLOON 2 -->
+
+            <div class="balloon-option">
+
+                <button
+                    class="balloon balloon-white"
+                    onclick="openGift('letter', this)"
+                >
+                    <span>02</span>
+                </button>
+
+                <p>
+                    A LIL MSG FOR YOUU
+                </p>
+
+            </div>
+
+
+
+            <!-- BALLOON 3 -->
+
+            <div class="balloon-option">
+
+                <button
+                    class="balloon balloon-dark"
+                    onclick="openGift('cake', this)"
+                >
+                    <span>03</span>
+                </button>
+
+                <p>
+                   AB WISH BHI MAANG LE (LDKA NA MAANGI PLS)
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <p class="tiny-note">
+            choose wisely ♡
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         MEMORY WALL
+    ========================== -->
+
+    <section class="screen pink-screen memory-screen" id="memories">
+
+
+        <!-- Heading -->
+
+        <div class="memory-header">
+
+            <p class="eyebrow">
+                A FEW OF MY FAVOURITE MEMORIES
+            </p>
+
+            <h2>
+                A little piece<br>
+                of us. ♡
+            </h2>
+
+            <p class="memory-subtitle">
+                hehehe..hope you enjoy.
+            </p>
+
+        </div>
+
+
+        <!-- Streamers -->
+
+        <div class="streamer streamer-one"></div>
+
+        <div class="streamer streamer-two"></div>
+
+        <div class="streamer streamer-three"></div>
+
+
+        <!-- Photos will be added here automatically -->
+
+        <div
+            class="photo-wall"
+            id="photoWall"
+        ></div>
+
+
+        <!-- Bottom button -->
+
+        <div class="memory-bottom">
+
+            <button
+                class="back-button white-button"
+                onclick="goHome()"
+            >
+                ← BACK TO THE BALLOONS
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         LETTER
+    ========================== -->
+
+    <section id="letter" class="screen white-screen letter-screen">
+
+        <div class="letter-content">
+
+            <p class="eyebrow pink-text">
+                SOMETHING I WANTED TO SAY
+            </p>
+
+            <h2>
+                For you,<br>
+                always hereeee . ♡
+            </h2>
+
+
+            <div class="letter-card">
+
+                <p class="letter-greeting">
+                    TO MY DEVANSHIIIIII ,
+                </p>
+
+
+                <!--
+                   A VERY VERY HAPPY BIRTHDAYY TO MY BESTESTEST FRIENDDD .. 
+                -->
+
+                <p class="message-space">
+
+                    
+
+                    
+
+                    DEVANSHIII ..happy birthdayy .. honeslty tere saath itne saal nikl gye ...damnn bhai .. each day was soo uff bhaii.. 
+                    Our gossips , bitvhing abt alex aryan , and esp the girls we hate .. rishika , gunjan, nidhi , manya .. uff
+                    our deep talks , our video calls , dance pracitces .. damnnnn .. one of my best memories of school lifeee and a frnd forever 
+                    but khair .. ab aap 19 ki ho chuki hai ..officially you are buddhi noww .. so as ur birthday present I'll bring a stick
+                    jo tumhe chlne mein madad kre ..and nakli daant .. hehehe ..love you so muchh ..enjoy ur dayyyy .. 
+
+                </p>
+
+
+                <p class="letter-ending">
+                    With lots of love ♡
+                </p>
+
+            </div>
+
+
+            <button
+                class="back-button"
+                onclick="goHome()"
+            >
+                ← BACK TO THE BALLOONS
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CAKE
+    ========================== -->
+
+    <section class="screen pink-screen" id="cake">
+
+        <div class="cake-content">
+
+            <p class="eyebrow">
+                ONE LAST LITTLE THING
+            </p>
+
+            <h2>
+                Okay birthday girl...<br>
+                make a wish.
+            </h2>
+
+            <p class="cake-subtitle">
+                Close your eyes. and make a wish .. .
+            </p>
+
+
+            <div class="cake-area">
+
+                <div class="cake">
+
+
+                    <!-- Candles -->
+
+                    <div class="candles">
+
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Cake -->
+
+                    <div class="cake-top"></div>
+
+                    <div class="cake-body"></div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="main-button"
+                id="blowButton"
+                onclick="blowCake()"
+            >
+                BLOW THE CANDLES ✨
+            </button>
+
+
+            <!-- Wish result -->
+
+            <div
+                class="wish-result"
+                id="wishResult"
+            >
+
+                <h3>
+                    WISH MADE. ♡
+                </h3>
+
+                <p>
+                    Okay... now let's hope the universe
+                    was paying attention.
+                </p>
+
+                <button
+                    class="white-button"
+                    onclick="showFinal()"
+                >
+                    ONE LAST THING →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section class="screen white-screen" id="final">
+
+        <div class="final-content">
+
+            <p class="eyebrow pink-text">
+                HONEST REVIEWS ONLY
+            </p>
+
+            <h2>
+                So...<br>
+                how did we do? ♡
+            </h2>
+
+            <p class="final-subtitle">
+                Rate your birthday experience.
+            </p>
+
+
+            <div class="rating-card">
+
+                <div
+                    class="rating-hearts"
+                    id="ratingHearts"
+                >
+
+                    <button onclick="rate(1)">♡</button>
+                    <button onclick="rate(2)">♡</button>
+                    <button onclick="rate(3)">♡</button>
+                    <button onclick="rate(4)">♡</button>
+                    <button onclick="rate(5)">♡</button>
+                    <button onclick="rate(6)">♡</button>
+                    <button onclick="rate(7)">♡</button>
+                    <button onclick="rate(8)">♡</button>
+                    <button onclick="rate(9)">♡</button>
+                    <button onclick="rate(10)">♡</button>
+
+                </div>
+
+
+                <p id="ratingText">
+                    1 — 10. Don't be shy.
+                </p>
+
+            </div>
+
+
+            <p class="special-note">
+                Not everyone gets this experience.<br>
+                Reserved for special people only. 🎀
+            </p>
+
+
+            <button
+                class="replay-button"
+                onclick="restart()"
+            >
+                ↻ GET THE EXPERIENCE ALL OVER AGAIN
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONFETTI -->
+
+    <div id="confetti"></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
